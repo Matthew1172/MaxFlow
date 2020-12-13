@@ -83,25 +83,6 @@ int main()
      printf("finished after %d steps; total flow %d\n", stepcount, totalflow);
 }
 
-class MyNode{
-	private:
-	vector<MyNode> adj;
-	int label;
-
-	public:
-	MyNode(vector<MyNode> adj, int label){
-		this->adj = adj;
-		this->label = label;
-	}
-
-	int getLabel(){
-		return this->label;
-	}
-
-	vector<MyNode> getAdj(){
-		return this->adj;
-	}
-};
 
 int maxflow(int n, int *cap, int *flow, int *residual){
      
